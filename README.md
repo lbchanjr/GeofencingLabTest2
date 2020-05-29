@@ -1,0 +1,147 @@
+# GeofencingLabTest2
+MADS4005 Advanced iOS Development - Lab Test 2
+
+PROBLEM DESCRIPTION
+
+In this project, you will create an app that utilizes the key features of the CoreLocation and MapKit SDK.
+
+A sample application is shown in the diagram on the right.
+
+The specific app requirements are detailed below. 
+
+In summary, you will create an app that:
+Allows users to add pins to the map
+Calculate and display driving directions between each pin on the map
+Create a geofence around each pin on the map
+
+
+You have the flexibility to redesign the layout to better suit your simulator/device.
+
+REQUIREMENTS
+
+R1: CREATE A MAP
+Build an app that displays a map.
+You may choose the initial position and zoom level of the map.
+
+R2: ADDING PINS TO THE MAP
+The user can add pins to the map by manually entering a latitude and longitude.
+
+The map can have at maximum 5 pins.
+If the user tries to add more than 5 pins, your app must display an error message.
+
+Each pin must be labeled with an alphabetical letter from A - E.
+The first pin on the map is labelled A
+The 2nd pin is labelled B, 
+The 3rd pin is labelled C,
+etc
+
+After a pin is added, your app must perform the following actions:
+R3: Draw polylines between the pins on the map 
+R3: Calculate driving directions between the pins on the map
+R5: Setup a geofence around the pin
+
+
+R3: ADDING POLYLINES
+After a pin is added, your map should draw polylines to connect the pins in the order they were added.
+
+
+R4:  DISPLAYING DRIVING DIRECTIONS
+Every time a pin is added, your app should display:
+Turn by turn driving directions for the shortest route between the new pin and the previously added pin
+Total travel time for the route, using annotations
+
+The shortest route is defined as the fastest route between two points. 
+
+DISPLAYING DRIVING DIRECTIONS
+Each step of the route should be displayed inside a table view.
+
+The steps in the table view are cumulative. This means that every time you add a pin, the driving directions are appended to the end of the tableview.  You should not “delete” any previous data that may be in the table view.
+
+In other words, your table view should keep track of the complete driving directions between all the pins on the map.
+
+
+DISPLAYING  ROUTE NAME & ROUTE TRAVEL TIME
+The table view must also display the specific route name and estimated travel time.
+Travel time must be shown in days, hours, and minutes format.
+
+EXAMPLE OUTPUT
+Sample table view for a map with 3 pins
+
+Driving Directions from A to B
+Estimated time: 0d, 2h, 45m
+
+Turn right on Parkwood Avenue
+Continue for 100km until Main Street
+Turn left on Main street
+Your destination is on the right
+Driving Direction from B to C
+Estimated time: 0d 0h 15m
+
+Continue straight for 200m
+Turn right at Maria Drive
+Turn right on El Camino Way
+Turn right on Hacienda Blvd
+Your destination is on the left.
+
+
+
+R5:  DELETING PINS AND POLYLINES
+
+Provide the user button called “RESET MAP”
+
+When they press reset,
+All pins and polylines are removed from the map.  
+All driving directions are deleted from the table view
+The map resets to its original starting position.  
+
+
+R6: CREATING A GEOFENCE
+
+According to CIO.com, geofencing is defined as a location based service where an app uses GPS, Wifi or cellular data to trigger an event when a mobile device enters or exits a virtual boundary around a specific geographical location.
+
+
+
+
+Your app must give the user the option to turn on “geofencing”. 
+
+If geofencing is on:
+The map updates to show the user’s current position
+A geofence is created around each pin on the map.   If there are no pins on the map, then there are no geofences.
+The app detects if the user enters or exits the geofence. 
+
+
+DETECTING USER POSITION
+If geofencing is on, then you must perform the following actions:
+Show the user’s position on the map
+Update the visible area of the map to show the 3km of area around the user’s current position. The center of the map is the user’s current position.
+
+If the user’s position changes, then your map must also update to reflect the change in position.
+
+
+CREATING A GEOFENCE:
+For each pin on the map, create a geofence around the pin. If there are no pins on the map, then there are no geofences.
+
+The geofence is defined as a 1km meter circle around the point. You do not need to draw the geofence on the map, but you do need to detect if the user is within the boundaries of the geofence.
+
+
+
+
+DETECTING ENTRY OR EXIT 
+If the user is within the 1km radius, then change the background of the app to green
+
+If the user exits the 1km radius, then change the background to white.
+
+
+We will be testing this feature using one of the movement options from the Simulator debug window.  (City Run, City Bicycle Ride, or Freeway Drive)
+
+
+
+TECHNICAL RESTRICTION
+The IOS SDK has built-in functions for calculating distance and managing geofences. 
+You are not allowed to use these functions.
+
+Examples include, but are not limited to:
+CLLocation’s .distance(from:) function
+The locationManager(:didEnterRegion) or locationManager(:didExitRegion) delegate functions.
+
+
