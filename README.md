@@ -20,7 +20,7 @@
 
 * Drawing of polylines between 2 markers added in sequence with the last marker connecting to the first marker.
 
-* Toggling of geofencing function
+* Toggling of geofencing function. If geofencing is ON, background color changes to green if current locations falls with 1000m of any of the markers.
 
 
 
