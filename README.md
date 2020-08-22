@@ -13,8 +13,7 @@
 
 #### Screenshots  
 
-<img src="./screenshots/screenshot2.png" alt="screen shot 2" width="200">     <img src="./screenshots/screenshot3.png" alt="screen shot 3" width="200">     <img src="./screenshots/screenshot4.png" alt="screen shot 4" width="200">     <img src="./screenshots/screenshot5.png" alt="screen shot 6" width="200">     <img src="./screenshots/screenshot6.png" alt="screen shot 7" width="200">     
-<img src="./screenshots/screenshot7.png" alt="screen shot 11" width="200">
+<img src="./screenshots/screenshot2.png" alt="screen shot 2" width="200">     <img src="./screenshots/screenshot3.png" alt="screen shot 3" width="200">     <img src="./screenshots/screenshot4.png" alt="screen shot 4" width="200">     <img src="./screenshots/screenshot5.png" alt="screen shot 6" width="200">     <img src="./screenshots/screenshot6.png" alt="screen shot 7" width="200">     <img src="./screenshots/screenshot7.png" alt="screen shot 11" width="200">
 
 #### Features
 * Marker setting of up to 5 markers by specifying longitude and latitude
@@ -25,5 +24,5 @@
 
 * Toggling of geofencing function. If geofencing is ON, background color changes to green if current locations falls with 1000m of any of the markers.
 
-
+#### Link to specification: <a href="./docs/App Specs.txt" target="_blank">[App Specification]</a>
 
