@@ -13,9 +13,9 @@
 
 #### Screenshots  
 
-<img src="./screenshots/screenshot1.png" alt="screen shot 1" width="200">     <img src="./screenshots/screenshot2.png" alt="screen shot 2" width="200">     <img src="./screenshots/screenshot3.png" alt="screen shot 3" width="200">     <img src="./screenshots/screenshot4.png" alt="screen shot 4" width="200">     <img src="./screenshots/screenshot5.png" alt="screen shot 6" width="200">     <img src="./screenshots/screenshot6.png" alt="screen shot 7" width="200">     
+<img src="./screenshots/screenshot2.png" alt="screen shot 2" width="200">     <img src="./screenshots/screenshot3.png" alt="screen shot 3" width="200">     <img src="./screenshots/screenshot4.png" alt="screen shot 4" width="200">     <img src="./screenshots/screenshot5.png" alt="screen shot 6" width="200">     <img src="./screenshots/screenshot6.png" alt="screen shot 7" width="200">     
 <img src="./screenshots/screenshot7.png" alt="screen shot 11" width="200">
-<br/>
+
 #### Features
 * Marker setting of up to 5 markers by specifying longitude and latitude
 
