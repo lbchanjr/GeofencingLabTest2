@@ -18,7 +18,7 @@
 #### Features
 * Marker setting of up to 5 markers by specifying longitude and latitude
 
-* Text direction displays for 2 or more markers. 
+* Text direction is displayed if 2 or more markers are added. Direction is specified from Marker A to B, Marker B to C and so on. The last marker will then be connected back to the first marker (Marker A) with the text direction also specified. 
 
 * Drawing of polylines between 2 markers added in sequence with the last marker connecting to the first marker.
 
